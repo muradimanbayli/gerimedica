@@ -1,0 +1,52 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_create-symptom-table
+      author: murad.imanbayli
+      changes:
+        - createTable:
+            tableName: symptom
+            columns:
+              - column:
+                  name: id
+                  type: bigserial
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: source
+                  type: varchar(50)
+              - column:
+                  name: code_list_code
+                  type: varchar(256)
+              - column:
+                  name: display_value
+                  type: varchar(500)
+              - column:
+                  name: code
+                  type: varchar(256)
+                  constraints:
+                    unique: true
+                    nullable: false
+              - column:
+                  name: long_description
+                  type: varchar(2000)
+              - column:
+                  name: from_date
+                  type: date
+              - column:
+                  name: to_date
+                  type: date
+              - column:
+                  name: sorting_priority
+                  type: int
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValue: now()
+                  constraints:
+                    nullable: false
+              - column:
+                  name: updated_at
+                  type: TIMESTAMP
+                  defaultValue: now()
+                  constraints:
+                    nullable: false

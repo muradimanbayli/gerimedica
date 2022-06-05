@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "6664057e-0638-4581-be13-e0ff9edeee88",
+		"name": "gerimedica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16632503"
+	},
+	"item": [
+		{
+			"name": "CSV upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/muradimanbayli/Desktop/testData.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/code",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "get by code",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
