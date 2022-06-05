@@ -28,14 +28,11 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:8080/code",
+					"raw": "localhost:8080",
 					"host": [
 						"localhost"
 					],
-					"port": "8080",
-					"path": [
-						"code"
-					]
+					"port": "8080"
 				}
 			},
 			"response": []
@@ -44,15 +41,29 @@
 			"name": "get all",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "delete all",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
 			},
 			"response": []
 		},
@@ -60,7 +71,17 @@
 			"name": "get by code",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/271636001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"271636001"
+					]
+				}
 			},
 			"response": []
 		}
